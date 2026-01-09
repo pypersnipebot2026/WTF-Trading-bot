@@ -1,0 +1,19 @@
+wtf-trading-bot/                  # ← GitHub repo root
+├── main.py                       # Entry point only (asyncio.run(main()))
+├── requirements.txt
+├── .env.example
+├── .gitignore
+├── bot/                          # Telegram bot logic
+│   ├── __init__.py
+│   ├── handlers/                 # /start, /buy, callbacks...
+│   ├── keyboards/
+│   └── utils/                    # ← HERE is the best place
+│       ├── __init__.py
+│       ├── token_data.py         # ← Put fetchTokenData here
+│       ├── solana.py             # RPC calls, transactions, etc.
+│       ├── cache.py              # hybridTokenDataCache logic
+│       ├── price.py              # getSolPrice()
+│       └── formatting.py         # CHAD-style message builders
+└── core/
+    ├── config.py
+    └── database.py
