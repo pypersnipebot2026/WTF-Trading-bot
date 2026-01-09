@@ -1,0 +1,3 @@
+bot: python -m bot.main
+# or if main.py is in root:
+# bot: python main.py
