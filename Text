@@ -1,0 +1,6 @@
+wtf-trading-bot/               ← root = git repo root
+├── bot/
+│   └── main.py               ← entry point with asyncio.run(main())
+├── requirements.txt           ← CRITICAL
+├── .gitignore
+└── optional: Procfile / runtime.txt
