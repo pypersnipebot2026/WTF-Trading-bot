@@ -1,0 +1,6 @@
+# For Jito bundles / MEV protection
+jito-py>=0.1.0                     # (if exists in 2026)
+
+# For faster performance / caching
+aioredis>=2.0.0                    # Redis async client
+orjson>=3.10.0                     # Ultra fast JSON
