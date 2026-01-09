@@ -1,0 +1,22 @@
+@router.message(CommandStart())
+async def cmd_start_aggressive(message: Message):
+    text = """
+<b>WTF TRADING BOT – Fastest Solana Memecoin Sniping & Trading</b>
+
+• Instant buys/sells
+• Copy top traders
+• Auto-snipe launches
+• Priority fees & Jito bundles
+
+You need a wallet to start trading.
+
+Create one now (takes 5 seconds) ↓
+    """.strip()
+
+    keyboard = InlineKeyboardMarkup(inline_keyboard=[
+        [InlineKeyboardButton(text="💥 CREATE WALLET NOW", callback_data="wallet_create")],
+        [InlineKeyboardButton(text="I already have one → Connect", callback_data="wallet_connect")],
+        [InlineKeyboardButton(text="View Top Trending", callback_data="trending")]
+    ])
+
+    await message.answer(text, reply_markup=keyboard, parse_mode="HTML")
