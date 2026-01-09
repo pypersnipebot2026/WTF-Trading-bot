@@ -1,0 +1,17 @@
+wtf-trading-bot/                  # ← GitHub repository root
+├── main.py                       # Bot entry point
+├── requirements.txt              # Dependencies
+├── .env.example                  # Template for environment variables
+├── .gitignore                    # ← Very important!
+├── README.md
+├── bot/                          # All bot logic
+│   ├── __init__.py
+│   ├── handlers/
+│   ├── keyboards/
+│   ├── states/
+│   ├── middlewares/
+│   └── utils/
+├── core/                         # Config, database, models
+│   ├── config.py
+│   └── database.py
+└── logs/                         # (created at runtime)
