@@ -1,0 +1,12 @@
+# requirements.txt
+aiogram>=3.13.0,<3.99              # Modern Telegram Bot Framework
+python-dotenv>=1.0.1               # Environment variables
+aiohttp>=3.9.0                     # HTTP client (used internally by aiogram)
+solders>=0.21.0                    # Fast Solana types & primitives
+solana>=0.34.0                     # Solana RPC client
+httpx>=0.27.0                      # Alternative async HTTP client
+pydantic>=2.5.0,<3.0               # Settings & data validation
+redis>=5.0.0                       # If you use redis for cache/state
+aiosqlite>=0.20.0                  # Lightweight async sqlite (alternative to postgres)
+tenacity>=8.2.3                    # Retry logic for RPC calls
+structlog>=24.1.0                  # Better structured logging
